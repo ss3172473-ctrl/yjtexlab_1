@@ -7,14 +7,14 @@ import AdminDashboard from './components/Admin/AdminDashboard';
 import { getProducts } from './api/productManager';
 
 function App() {
-  const [isAdmin, setIsAdmin] = useState(window.location.pathname === '/admin');
+  const [isAdmin, setIsAdmin] = useState(window.location.pathname.startsWith('/admin'));
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
   const [selectedProduct, setSelectedProduct] = useState(null);
 
   useEffect(() => {
     // Basic routing check
-    if (window.location.pathname === '/admin') {
+    if (window.location.pathname.startsWith('/admin')) {
       setIsAdmin(true);
     }
 
