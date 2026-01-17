@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { getProducts, saveProducts, resetData } from '../api/productManager';
+import { getProducts, saveProducts, resetData } from '../../api/productManager';
 
 export default function AdminDashboard() {
     const [products, setProducts] = useState([]);
