@@ -117,30 +117,7 @@ const DetailModal = ({ product, onClose }) => {
                         </div>
                     </div>
 
-                    <p style={{ marginBottom: '24px', color: '#555', lineHeight: 1.6 }}>
-                        {/* Description based on view type? Or just static text for now */}
-                        {activeTab === 3 ?
-                            "이 원단으로 만들 수 있는 스타일을 제안합니다." :
-                            "고급스러운 터치감과 우수한 품질의 원단입니다."}
-                    </p>
-
-                    <button
-                        onClick={handleOrder}
-                        disabled={isSoldOut}
-                        style={{
-                            width: '100%',
-                            padding: '18px',
-                            backgroundColor: isSoldOut ? '#ccc' : 'var(--primary-color)',
-                            color: '#fff',
-                            fontSize: '1.2rem',
-                            fontWeight: 'bold',
-                            borderRadius: '8px',
-                            opacity: isSoldOut ? 0.7 : 1,
-                            cursor: isSoldOut ? 'not-allowed' : 'pointer'
-                        }}
-                    >
-                        {isSoldOut ? '품절된 상품입니다' : '이 원단 찜하기 (번호 기억)'}
-                    </button>
+                    {/* Description and Button Removed as requested */}
                 </div>
             </div>
         </div>

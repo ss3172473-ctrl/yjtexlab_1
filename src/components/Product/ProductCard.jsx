@@ -36,15 +36,21 @@ const ProductCard = ({ product, onClick }) => {
                         판매 종료
                     </div>
                 )}
-            </div>
-            <div style={{ padding: '12px' }}>
-                <h3 className="font-bold" style={{ fontSize: '1.2rem', marginBottom: '4px' }}>
+                <div style={{
+                    position: 'absolute',
+                    bottom: '8px',
+                    left: '8px',
+                    backgroundColor: 'rgba(0,0,0,0.5)',
+                    color: '#fff',
+                    padding: '2px 6px',
+                    borderRadius: '4px',
+                    fontSize: '0.8rem',
+                    fontWeight: 'bold'
+                }}>
                     #{id}
-                </h3>
-                <p style={{ color: 'var(--text-main)', fontSize: '1.1rem', fontWeight: '500' }}>
-                    {price}원
-                </p>
+                </div>
             </div>
+            {/* Price and Details removed as requested */}
         </div>
     );
 };
