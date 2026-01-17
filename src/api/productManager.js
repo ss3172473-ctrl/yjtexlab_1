@@ -9,11 +9,8 @@ export const getProducts = () => {
 
     // Process for display (transform to match component expectations)
     return products.map(p => {
-        // Determine Price
-        let price = '2,000';
-        if (p.group && (p.group.includes('나염') || p.group.includes('Print'))) {
-            price = '3,000';
-        }
+        // Price is manual now
+        let price = p.price || '';
 
         return {
             id: p.id,

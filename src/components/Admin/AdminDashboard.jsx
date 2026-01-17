@@ -74,7 +74,7 @@ export default function AdminDashboard() {
                     <tr style={{ background: '#f0f0f0' }}>
                         <th style={{ border: '1px solid #ddd', padding: '8px' }}>ID</th>
                         <th style={{ border: '1px solid #ddd', padding: '8px' }}>그룹</th>
-                        <th style={{ border: '1px solid #ddd', padding: '8px' }}>가격 (자동)</th>
+                        <th style={{ border: '1px solid #ddd', padding: '8px' }}>가격</th>
                         <th style={{ border: '1px solid #ddd', padding: '8px' }}>품절</th>
                         <th style={{ border: '1px solid #ddd', padding: '8px' }}>비고</th>
                     </tr>
@@ -90,7 +90,14 @@ export default function AdminDashboard() {
                                     style={{ width: '100%' }}
                                 />
                             </td>
-                            <td style={{ border: '1px solid #ddd', padding: '8px' }}>{p.price}</td>
+                            <td style={{ border: '1px solid #ddd', padding: '8px' }}>
+                                <input
+                                    value={p.price || ''}
+                                    onChange={(e) => updateProduct(p.id, 'price', e.target.value)}
+                                    placeholder="가격"
+                                    style={{ width: '100%' }}
+                                />
+                            </td>
                             <td style={{ border: '1px solid #ddd', padding: '8px', textAlign: 'center' }}>
                                 <input
                                     type="checkbox"

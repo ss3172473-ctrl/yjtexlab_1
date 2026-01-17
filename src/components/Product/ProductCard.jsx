@@ -17,7 +17,7 @@ const ProductCard = ({ product, onClick }) => {
                 transition: 'transform 0.2s',
             }}
         >
-            <div style={{ position: 'relative', paddingBottom: '125%', overflow: 'hidden' }}>
+            <div style={{ position: 'relative', paddingBottom: '100%', overflow: 'hidden' }}>
                 <img
                     src={mainImage}
                     alt={`Fabric ${id}`}
