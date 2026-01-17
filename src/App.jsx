@@ -42,9 +42,7 @@ function App() {
         borderBottom: '1px solid #eee'
       }}>
         <h1 style={{ textAlign: 'center', marginBottom: '8px' }}>영진원단</h1>
-        <p style={{ textAlign: 'center', fontSize: '1rem', color: '#888' }}>
-          Digital Fabric Archive
-        </p>
+
       </header>
 
       {loading ? (
