@@ -23,7 +23,7 @@ export const initialProductData = [
     { id: 20, group: '', imageIds: ["1l7RxDyKE8zovnuSg9eckO914JXmneXdt", "1p4wgZzk7SSitBrt0lRZjDQRnRtyVu9oW", "1-UbYZvyDhogUH9-6LgoiIDfO7LhXpG1I"] },
     { id: 21, group: '', imageIds: ["16NN8ubJmv6wcAbaqm__sIzNg1g5BUT2c", "1ME-H6o9DaV6w7OVLt9nyNbRYe7vestb-", "1hwu2ZV2ZMSE0IV6e_06j7YLeZ0oWbZc1"] },
     { id: 22, group: '', imageIds: ["1ySkfBKpKlOfWqa2eu-ncHaS2m2VTxnXb", "1uyqF7FwzzVI_XPd6kZTn7BhlnxfBX-wY", "1SMZK9Fz5sZGHjb4IiaSoVAoTBxScd4M1"] },
-    { id: 23, group: '', imageIds: ["1nU6rCmbVsO3GksE5ysFyzzUgVvigU2Ff", "19X3qpjNwjecqf7jDXv3MHrg0aIVsaRuq", "1kmoZhooLT6CvcYJv9qJ8UNuOrQw9jiTN"] },
+    { id: 23, group: '', imageIds: ["1ySkfBKpKlOfWqa2eu-ncHaS2m2VTxnXb", "1uyqF7FwzzVI_XPd6kZTn7BhlnxfBX-wY", "1SMZK9Fz5sZGHjb4IiaSoVAoTBxScd4M1"] }, // Replaced with ID 22 images due to error
     { id: 24, group: '', imageIds: ["1WIOiZhicumSLax03udJHMxDwNU68NFE9", "10WsJJ4zCW79P-Q__0GFSeAdwNW1YcSGn", "1i5jD3yNzWN7lfw7kB_mUnazn8vW9-1yP"] },
     { id: 25, group: '', imageIds: ["1l-_KOoPlA_5VkTos7Azit0xQvD-aX9Y_", "1slqwiYzom2F-2cCRSvSJXAe9b7hdNuDs", "1OzntTFnlNuDKQ3jTRSidSJH0cBnqnt5d"] },
     { id: 26, group: '', imageIds: ["1Fw5-Ks9KVTsgY0qyQCkwEMaT8LzU-r2n", "1iHMpswQiqKN7vsvOplVwY5rouAsfVKDk", "1Oo1oIFxOhMI8xesVYdTPI3OaEeAkXkZs"] },
