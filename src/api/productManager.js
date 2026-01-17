@@ -16,7 +16,9 @@ export const getProducts = () => {
             id: p.id,
             group: p.group,
             price: price, // Auto-calculated
-            images: p.imageIds ? p.imageIds.map(getDriveImageLink).filter(Boolean) : [],
+            images: p.imageIds && p.imageIds.length >= 3
+                ? [p.imageIds[2], p.imageIds[1], p.imageIds[0]].map(getDriveImageLink).filter(Boolean)
+                : (p.imageIds ? p.imageIds.map(getDriveImageLink).filter(Boolean) : []),
             isSoldOut: p.isSoldOut || false
         };
     });

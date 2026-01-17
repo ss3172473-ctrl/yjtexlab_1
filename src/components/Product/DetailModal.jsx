@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 
 const VIEW_TYPES = [
-    { id: 0, label: '기본', key: 'normal' },
+    { id: 0, label: '질감', key: 'texture' },
     { id: 1, label: '크기', key: 'scale' },
-    { id: 2, label: '질감', key: 'texture' },
+    { id: 2, label: '기본', key: 'normal' },
 ];
 
 const DetailModal = ({ product, onClose }) => {
