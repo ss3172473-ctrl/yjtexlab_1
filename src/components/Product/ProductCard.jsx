@@ -47,7 +47,7 @@ const ProductCard = ({ product, onClick }) => {
                     fontSize: '0.8rem',
                     fontWeight: 'bold'
                 }}>
-                    #{id}
+                    {id}
                 </div>
             </div>
             {/* Price and Details removed as requested */}

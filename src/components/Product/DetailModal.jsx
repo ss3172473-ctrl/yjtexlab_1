@@ -110,11 +110,13 @@ const DetailModal = ({ product, onClose }) => {
                     <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '24px' }}>
                         <div>
                             <span style={{ fontSize: '1rem', color: '#666', display: 'block' }}>Fabric Code</span>
-                            <h2 style={{ fontSize: '2rem', fontWeight: '800', lineHeight: 1.2 }}>#{id}</h2>
+                            <h2 style={{ fontSize: '2rem', fontWeight: '800', lineHeight: 1.2 }}>{id}</h2>
                         </div>
-                        <div style={{ fontSize: '1.8rem', fontWeight: '700', color: 'var(--primary-color)' }}>
-                            {price}원
-                        </div>
+                        {price && (
+                            <div style={{ fontSize: '1.8rem', fontWeight: '700', color: 'var(--primary-color)' }}>
+                                {price}원
+                            </div>
+                        )}
                     </div>
 
                     {/* Description and Button Removed as requested */}
